@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Title">
+
+    <com.zhkj.housekeeping.widget.textView.IconTextView
+        android:id="@+id/tvLeft"
+        style="@style/Title.Icon"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginStart="@dimen/dp_22"
+        android:text="@string/iconBack" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TitleText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_toEndOf="@id/tvLeft"
+        android:layout_toRightOf="@id/tvLeft"
+        android:gravity="center"
+        android:text="@string/placeholder" />
+
+    <com.zhkj.housekeeping.widget.textView.IconTextView
+        android:id="@+id/tvRight"
+        style="@style/Title.Icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22"/>
+
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent" />
+</RelativeLayout>
