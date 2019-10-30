@@ -363,11 +363,37 @@
 
     /**********字体适配***************/
 
+    <dimen name="sp_8">9.111111sp</dimen>
+    <dimen name="sp_9">10.25sp</dimen>
+    <dimen name="sp_10">11.388888sp</dimen>
+    <dimen name="sp_11">12.527777sp</dimen>
     <dimen name="sp_12">13.666666sp</dimen>
+    <dimen name="sp_13">14.805555sp</dimen>
     <dimen name="sp_14">15.944444sp</dimen>
+    <dimen name="sp_15">17.083332sp</dimen>
     <dimen name="sp_16">18.222221sp</dimen>
+    <dimen name="sp_17">19.36111sp</dimen>
     <dimen name="sp_18">20.5sp</dimen>
+    <dimen name="sp_19">21.638887sp</dimen>
     <dimen name="sp_20">22.777777sp</dimen>
+    <dimen name="sp_21">23.916666sp</dimen>
     <dimen name="sp_22">25.055553sp</dimen>
+    <dimen name="sp_23">26.194443sp</dimen>
     <dimen name="sp_24">27.333332sp</dimen>
+    <dimen name="sp_25">28.472221sp</dimen>
+    <dimen name="sp_26">29.61111sp</dimen>
+    <dimen name="sp_27">30.749998sp</dimen>
+    <dimen name="sp_28">31.888887sp</dimen>
+    <dimen name="sp_29">33.027775sp</dimen>
+    <dimen name="sp_30">34.166664sp</dimen>
+    <dimen name="sp_31">35.305553sp</dimen>
+    <dimen name="sp_32">36.444443sp</dimen>
+    <dimen name="sp_33">37.583332sp</dimen>
+    <dimen name="sp_34">38.72222sp</dimen>
+    <dimen name="sp_35">39.86111sp</dimen>
+    <dimen name="sp_36">41.0sp</dimen>
+    <dimen name="sp_37">42.138885sp</dimen>
+    <dimen name="sp_38">43.277775sp</dimen>
+    <dimen name="sp_39">44.416664sp</dimen>
+    <dimen name="sp_40">45.555553sp</dimen>
 </resources>
