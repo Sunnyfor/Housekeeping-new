@@ -1,7 +1,7 @@
 package com.zhkj.housekeeping.work.presenter
 
 import com.zhkj.housekeeping.base.BasePresenter
-import com.zhkj.housekeeping.base.Constant
+import com.zhkj.housekeeping.constant.UrlConstant
 import com.zhkj.housekeeping.http.ApiManager
 import com.zhkj.housekeeping.project.bean.TotalProjectBean
 import com.zhkj.housekeeping.work.view.IProjectView
@@ -12,7 +12,7 @@ import com.zhkj.housekeeping.work.view.IProjectView
  * Mail yongzuo.chen@foxmail.com
  * Date 2019/10/22 17:38
  */
-class ProjectPresenter(view: IProjectView): BasePresenter<IProjectView>(view){
+class ProjectPresenter(view: IProjectView) : BasePresenter<IProjectView>(view) {
     override fun onCreate() {
 
     }
@@ -24,20 +24,21 @@ class ProjectPresenter(view: IProjectView): BasePresenter<IProjectView>(view){
     /**
      * 全部项目
      */
-    fun getTotalProjectData(){
-        val map = HashMap<String,String>()
+    fun getTotalProjectData() {
+        val map = HashMap<String, String>()
 //        map["deptId"] = "1"
 //        map["deptName"] = "2"
-        ApiManager.post(composites,map,Constant.LISTBYUSERIDZHFZ_URL,object :ApiManager.OnResult<TotalProjectBean>(){
-            override fun onSuccess(data: TotalProjectBean) {
+        ApiManager.post(composites, map,
+            UrlConstant.MY_PROJECT_URL, object : ApiManager.OnResult<TotalProjectBean>() {
+                override fun onSuccess(data: TotalProjectBean) {
 //                view?.getTotalProjectData(data)
-            }
+                }
 
-            override fun onFailed(code: String, message: String) {
+                override fun onFailed(code: String, message: String) {
 
-            }
+                }
 
-        })
+            })
     }
 
 }

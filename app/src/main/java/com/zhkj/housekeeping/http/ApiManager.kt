@@ -7,8 +7,8 @@ import com.google.gson.Gson
 import com.orhanobut.logger.Logger
 import com.zhkj.housekeeping.R
 import com.zhkj.housekeeping.base.BaseModel
-import com.zhkj.housekeeping.base.Constant
 import com.zhkj.housekeeping.base.MyApplication
+import com.zhkj.housekeeping.constant.UrlConstant
 import com.zhkj.housekeeping.util.NetworkUtil
 import com.zhkj.housekeeping.util.ToastUtil
 import io.reactivex.Observable
@@ -17,7 +17,10 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import okhttp3.*
+import okhttp3.MediaType
+import okhttp3.OkHttpClient
+import okhttp3.RequestBody
+import okhttp3.ResponseBody
 import retrofit2.HttpException
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -71,7 +74,7 @@ object ApiManager {
          * 初始化Retrofit
          */
         retrofit = Retrofit.Builder()
-            .baseUrl(Constant.getHost())
+            .baseUrl(UrlConstant.getHost())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .client(okHttpClient)
             .build()

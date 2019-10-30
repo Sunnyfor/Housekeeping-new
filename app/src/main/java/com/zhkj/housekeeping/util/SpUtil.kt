@@ -10,7 +10,7 @@ import com.zhkj.housekeeping.base.MyApplication
  * Mail yongzuo.chen@foxmail.com
  * Date 2019/10/22 17:38
  */
-object SharedUtil {
+object SpUtil {
 
     /**
      * 文件名

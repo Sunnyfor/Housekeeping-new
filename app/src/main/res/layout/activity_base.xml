@@ -4,12 +4,17 @@
     android:layout_height="match_parent">
 
     <FrameLayout
-        android:id="@+id/frameTitle"
-        style="@style/Title"/>
+        android:id="@+id/fl_title"
+        style="@style/Title" />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/Style_Line_Horizontal"
+        android:layout_below="@id/fl_title" />
 
     <FrameLayout
-        android:id="@+id/frameBody"
+        android:id="@+id/fl_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/frameTitle" />
+        android:layout_below="@id/view_line" />
 </RelativeLayout>

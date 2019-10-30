@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Housekeeping</string>
+    <string name="app_name">内务管理</string>
 
     <!--占位字符-->
     <string name="placeholder">TEST</string>

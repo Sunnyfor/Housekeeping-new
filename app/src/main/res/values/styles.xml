@@ -1,25 +1,25 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Base application theme. --><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="android:background">@color/color_layout</item>-->
     </style>
-
 
     <style name="Title">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/dp_70</item>
     </style>
 
-
     <style name="TitleText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/sp_24</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/color_black</item>
         <item name="android:singleLine">true</item>
         <item name="android:ellipsize">end</item>
     </style>
@@ -27,5 +27,81 @@
     <style name="Title.Icon">
 
     </style>
+
+    <!--通用按钮样式-->
+
+    <style name="Style_Button_Common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_marginLeft">@dimen/dp_20</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+        <item name="android:background">@drawable/sel_btn_bg</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <!--通用黑色字体-->
+
+    <style name="Style_Font_Black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/font_black</item>
+    </style>
+
+    <!--通用白色字体-->
+
+    <style name="Style_Font_White">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <!--通用灰色字体-->
+
+    <style name="Style_Font_Gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/font_gray</item>
+    </style>
+
+    <!--通用横线分割样式-->
+
+    <style name="Style_Line_Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+        <item name="android:background">@color/color_border</item>
+    </style>
+
+    <!--通用竖线分割样式-->
+
+    <style name="Style_Line_Vertical">
+        <item name="android:layout_width">@dimen/dp_1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_border</item>
+    </style>
+
+
+    <!--项目信息子条目样式-->
+
+    <style name="Style_Item_Project_Info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/sel_border_blr</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <!--项目信息子条目右侧字体-->
+
+    <style name="Style_Font_Project_Info" parent="Style_Font_Gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">right</item>
+    </style>
+
 
 </resources>

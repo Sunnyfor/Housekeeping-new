@@ -3,6 +3,7 @@ package com.zhkj.housekeeping.widget
 import android.view.View
 import com.zhkj.housekeeping.R
 import com.zhkj.housekeeping.base.BaseActivity
+import kotlinx.android.synthetic.main.activity_base.*
 import kotlinx.android.synthetic.main.layout_default_title.view.*
 
 /**
@@ -20,8 +21,13 @@ class TitleManager(private var baseActivity: BaseActivity) {
         return view
     }
 
+    fun goneTitle() {
+        baseActivity.fl_title.visibility = View.GONE
+        baseActivity.view_line.visibility = View.GONE
+    }
 
     private fun getBackClickListener(): View.OnClickListener = View.OnClickListener {
         baseActivity.finish()
     }
+
 }
